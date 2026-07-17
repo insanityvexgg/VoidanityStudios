@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Mod - Voidanity Studios</title>
+    <style>
+        /* --- MATCHING HOME THEME --- */
+        :root {
+            --text-color: #ffffff;
+            --accent-color: #ba68c8;
+            --galactic-gradient: linear-gradient(135deg, #0d1b2a, #1b263b, #415a77, #3a0ca3, #7209b7);
+            --content-bg: rgba(11, 7, 30, 0.8);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--galactic-gradient);
+            background-attachment: fixed;
+            color: var(--text-color);
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        /* --- POST CONTAINER --- */
+        .post-wrapper {
+            max-width: 800px;
+            margin: 8vh auto;
+            padding: 40px;
+            background: var(--content-bg);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Navigation Links */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 30px;
+            transition: color 0.2s, transform 0.2s;
+        }
+
+        .back-link:hover {
+            color: #ffffff;
+            transform: translateX(-3px);
+        }
+
+        /* Post Formatting */
+        h1 {
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+            color: #ffffff;
+        }
+
+        .post-date {
+            font-size: 0.9rem;
+            color: #b0a8b9;
+            margin-bottom: 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 15px;
+        }
+
+        .post-body {
+            line-height: 1.7;
+            font-size: 1.1rem;
+            color: #e0dced;
+        }
+
+        .post-body p {
+            margin-bottom: 20px;
+        }
+
+        /* Download / Action Button */
+        .download-btn {
+            display: inline-block;
+            margin-top: 30px;
+            color: #ffffff;
+            background: #7209b7;
+            padding: 12px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.05rem;
+            box-shadow: 0 4px 15px rgba(114, 9, 183, 0.3);
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .download-btn:hover {
+            background: #3a0ca3;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="post-wrapper">
+        <a href="../index.html" class="back-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            Back to Home
+        </a>
+
+        <article>
+            <h1>Sample Mod Showcase Title</h1>
+            <div class="post-date">Released on July 17, 2026</div>
+            
+            <div class="post-body">
+                <p>Welcome to the dedicated project page for this mod! This is where you can easily showcase your creations with in-depth descriptions, feature logs, patch notes, or installation guides.</p>
+                
+                <p>Because the main styling matches the root home file perfectly, transitioning between pages feels ultra-smooth for your community.</p>
+                
+                <a href="#" target="_blank" class="download-btn">Download Mod</a>
+            </div>
+        </article>
+    </div>
+
+</body>
+</html>
